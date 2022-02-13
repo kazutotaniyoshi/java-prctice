@@ -44,5 +44,21 @@ public class test{
 	            System.out.println("変更します");
 	            break;
 	    }
+System.out.println("数当てゲーム");
+	    
+	    int ans = new java.util.Random().nextInt(10);
+	    
+	    for(int i = 0; i < 5; i++){
+	        System.out.println("０〜９の好きな数字を入力してね。ゲーム回数は5回だよ");
+	        int num = new java.util.Scanner(System.in).nextInt();
+	            if(num == ans){
+	            System.out.println("アタリ");
+	            System.out.println("お疲れさま。これで終わりだよ");
+	            break;
+	            }
+	            else{ 
+	            System.out.println("ハズレ");
+	            System.out.println("残念！もう一回！");
+	            }
 	}
 }
