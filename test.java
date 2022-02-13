@@ -13,5 +13,36 @@ public class test{
 		
 		System.out.println("占いの結果が出ました");
 		System.out.println(age + "才の" + name + "さん。" + "あなたの運気番号は" + fortune + "です");
+		
+		String food = "おにぎり";
+	    int isHungry = 1;
+	    System.out.println("こんにちは");
+	    
+	    if(isHungry == 0){
+	       System.out.println("満腹です。");
+	    }
+	    else{
+	        System.out.println("お腹が空きました。");
+	        System.out.println(food + "を食べます。");
+	    }
+	    System.out.println("ごちそうさまでした");
+	    
+	    System.out.println("[メニュー] 1:検索 2:登録 3:削除 4:変更");
+	    int selected = new java.util.Scanner(System.in).nextInt();
+	    
+	    switch(selected){
+	        case 1:
+	            System.out.println("検索します");
+	            break;
+	        case 2:
+	            System.out.println("登録します");
+	            break;
+	        case 3:
+	            System.out.println("削除します");
+	            break;
+	        case 4:
+	            System.out.println("変更します");
+	            break;
+	    }
 	}
 }
